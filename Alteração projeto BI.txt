@@ -1,0 +1,20 @@
+- Altera tipo de dado text para int na coluna Essn na tabela dependent.
+- Removido a coluna de metadado azure_company.employee na tabela dependent.
+- Altera tipo de dado text para int na coluna Mgr_ssn na tabela departament.
+- Removido as colunas de metadado azure_company.dept_locations,azure_company.dept_employee(Mgr_ssn),azure_company.dept_employee(Mgr_ssn)2,azure_company.project na tabela departament.
+- Altera tipo de dado text para int na coluna Ssn na tabela employee.
+- Altera tipo de dado int para float na coluna Salary na tabela employee.
+- Altera tipo de dado txt para int na coluna Super_ssn na tabela employee.
+- Removido as colunas de metadado azure_company.departament (Ssn),azure_company.departament(Ssn)2,azure_company.dependent,azure_company.works_on na tabela employee.
+- Substituido o valo NULL na coluna Super_ssn por 888665555 na tabela employee.
+- Dividido a coluna de Address e mais 2, separando o número e estado do endereço.
+- Removido a coluna de metadado azure_company.departament na tabela dept_location.
+- Removido as colunas de metadado azure_company.departament,azure_company.works_on na tabela project.
+- Removido as colunas de metadado azure_company.employee, azure_company.project na tabela works_on.
+- Separado na tabela employee a coluna de adress, e gerado a coluna de numero_endereco, endereco e estado.
+- Alterado o nome das colunas em todas as tabelas para melhor identificação.
+- Realizado a mescla da tabela employee com a departament, criado a relação pelo número do gerente, na nova tabela herdados todos os dados da tabela employee e criado a nova coluna nome do departamento da tabela departament.
+- Alterado o nome da tabela mescla para azure_company employee_departament
+- Importado via comando SQL a junção de employee com manager e criado a tabela azure_company employee_manager.
+- Mesclado as colunas nome e sobrenome na tabela employee e exluido a coluna meio_nome.
+- Mesclado as colunas departamento e localizacao das tabelas departament e dept_locations
